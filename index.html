@@ -489,6 +489,34 @@
         }
 
         /* ===== EDUCATION ===== */
+        .education-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        @media (max-width: 780px) {
+            .education-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+        }
+
+        .education-photo {
+            width: 100%;
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow-sm);
+        }
+        .education-photo img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            max-height: 340px;
+            object-fit: cover;
+        }
+
         .timeline {
             list-style: none;
             margin: 0;
@@ -571,21 +599,18 @@
             width: 100%;
             height: 170px;
             background: var(--accent-light);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 16px;
+            overflow: hidden;
             border-bottom: 1px solid var(--line);
         }
         .project-image img {
             display: block;
-            max-width: 100%;
-            max-height: 100%;
-            width: auto;
-            height: auto;
-            object-fit: contain;
-            border-radius: 6px;
-            box-shadow: var(--shadow-sm);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
         }
 
         .project-content {
@@ -868,18 +893,23 @@
             <section id="education" class="reveal">
                 <p class="section-tag">Ausbildung</p>
                 <h2 class="section-title">Werdegang</h2>
-                <ul class="timeline">
-                    <li>
-                        <span class="timeline-date">2023 – 2024</span>
-                        <p class="timeline-title">Marokkanisches Abitur</p>
-                        <p class="timeline-desc">Schwerpunkt Physik &amp; Chemie, Marokko. Mit der Note "Sehr Gut" abgeschlossen.</p>
-                    </li>
-                    <li>
-                        <span class="timeline-date">2024 – 2026</span>
-                        <p class="timeline-title">Diplôme Universitaire de Technologie (DUT) — Informatik</p>
-                        <p class="timeline-desc">École Supérieure de Technologie, Marokko. Zwei Praktika absolviert. Von der ANABIN als gleichwertig mit einem deutschen Berufsfachschulabschluss anerkannt.</p>
-                    </li>
-                </ul>
+                <div class="education-grid">
+                    <ul class="timeline">
+                        <li>
+                            <span class="timeline-date">2023 – 2024</span>
+                            <p class="timeline-title">Marokkanisches Abitur</p>
+                            <p class="timeline-desc">Schwerpunkt Physik &amp; Chemie, Marokko. Mit der Note "Sehr Gut" abgeschlossen.</p>
+                        </li>
+                        <li>
+                            <span class="timeline-date">2024 – 2026</span>
+                            <p class="timeline-title">Diplôme Universitaire de Technologie (DUT) — Informatik</p>
+                            <p class="timeline-desc">École Supérieure de Technologie, Marokko. Zwei Praktika absolviert. Von der ANABIN als gleichwertig mit einem deutschen Berufsfachschulabschluss anerkannt.</p>
+                        </li>
+                    </ul>
+                    <div class="education-photo">
+                        <img src="images/baccalauriat.png" alt="Foto zum marokkanischen Abitur von Leila El Tousy">
+                    </div>
+                </div>
             </section>
 
             <!-- ===== PROJECTS ===== -->
