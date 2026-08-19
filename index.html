@@ -426,8 +426,10 @@
                 grid-template-columns: 1fr;
                 gap: 28px;
             }
+            .about-photo {
+                order: -1;
+            }
         }
-
         .about-text p {
             color: var(--ink-soft);
             margin-bottom: 16px;
@@ -453,6 +455,21 @@
             content: "→";
             color: var(--accent);
             flex-shrink: 0;
+        }
+
+        .about-photo {
+            width: 100%;
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 16px;
+        }
+        .about-photo img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
         }
 
         .stat-grid {
@@ -832,7 +849,7 @@
                         </p>
                         <div class="hero-links">
                             <a class="btn btn-primary" href="https://github.com/El-Tousy" target="_blank" rel="noopener">GitHub ansehen</a>
-                            <a class="btn btn-secondary" href="mailto:leilaeltousy@gmail.com">Kontaktiere mich</a>
+                            <a class="btn btn-secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=leilaeltousy@gmail.com&su=Kontaktaufnahme%20%C3%BCber%20Portfolio" target="_blank" rel="noopener">Kontaktiere mich</a>
                         </div>
                     </div>
 
@@ -867,6 +884,9 @@
                         </ul>
                     </div>
                     <div>
+                        <div class="about-photo">
+                            <img src="images/profil.png" alt="Foto von Leila El Tousy">
+                        </div>
                         <div class="stat-grid">
                             <div class="stat-box">
                                 <div class="stat-number">6</div>
@@ -1101,7 +1121,7 @@
                     Ich stehe offenen Ausbildungsangeboten ab 2027 gegenüber. Zögern Sie nicht, mir zu schreiben oder ein Video-Gespräch zu vereinbaren.
                 </p>
                 <div class="contact-row">
-                    <a class="btn btn-secondary" href="mailto:leilaeltousy@gmail.com">leilaeltousy@gmail.com</a>
+                    <a class="btn btn-secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=leilaeltousy@gmail.com&su=Kontaktaufnahme%20%C3%BCber%20Portfolio" target="_blank" rel="noopener">leilaeltousy@gmail.com</a>
                     <a class="btn btn-secondary" href="https://github.com/El-Tousy" target="_blank" rel="noopener">GitHub ↗</a>
                 </div>
             </section>
