@@ -426,9 +426,6 @@
                 grid-template-columns: 1fr;
                 gap: 28px;
             }
-            .about-photo {
-                order: -1;
-            }
         }
         .about-text p {
             color: var(--ink-soft);
@@ -455,21 +452,6 @@
             content: "→";
             color: var(--accent);
             flex-shrink: 0;
-        }
-
-        .about-photo {
-            width: 100%;
-            border-radius: var(--radius);
-            overflow: hidden;
-            border: 1px solid var(--line);
-            box-shadow: var(--shadow-sm);
-            margin-bottom: 16px;
-        }
-        .about-photo img {
-            display: block;
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
         }
 
         .stat-grid {
@@ -884,9 +866,6 @@
                         </ul>
                     </div>
                     <div>
-                        <div class="about-photo">
-                            <img src="images/profil.png" alt="Foto von Leila El Tousy">
-                        </div>
                         <div class="stat-grid">
                             <div class="stat-box">
                                 <div class="stat-number">6</div>
