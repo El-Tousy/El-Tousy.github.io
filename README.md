@@ -1,4 +1,4 @@
-# leila.dev — Portfolio von Leila El Tousy
+# leila.dev — Portfolio von mir
 
 Persönliches Portfolio von **mir**, Anwendungsentwicklerin aus Marokko auf der Suche nach einer **Ausbildung als Fachinformatikerin für Anwendungsentwicklung** in Deutschland (Start 2027).
 
