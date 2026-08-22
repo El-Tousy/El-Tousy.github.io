@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leila — Anwendungsentwicklerin</title>
-    <meta name="description" content="Leila El Tousy — Anwendungsentwicklerin aus Marokko, auf der Suche nach einer Ausbildung als Fachinformatikerin für Anwendungsentwicklung in Deutschland, 2027." />
+    <title>Leila El Tousy — IT-Nachwuchskraft</title>
+    <meta name="description" content="Leila El Tousy — IT-Nachwuchskraft aus Marokko. Praxisorientiert, technikbegeistert, lernbereit. Auf der Suche nach einem Ausbildungsplatz im IT-Bereich in Deutschland, ab 2027." />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1a2b'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%234ade80' text-anchor='middle'%3E%3C/%3E%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -576,8 +576,6 @@
             }
         }
 
-        /* Carte : image simple, bien visible, centrée en haut de la carte,
-           suivie du contenu texte en dessous. */
         .project-card {
             background: var(--surface);
             border: 1px solid var(--line);
@@ -731,6 +729,68 @@
             transform: translateY(-2px);
         }
 
+        /* ===== STRENGTHS ===== */
+        .strength-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+        .strength-box {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 18px 20px;
+            box-shadow: var(--shadow-sm);
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+        .strength-box:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+        .strength-title {
+            font-weight: 700;
+            font-size: 15.5px;
+            color: var(--ink);
+            margin: 0 0 6px;
+        }
+        .strength-desc {
+            font-size: 14px;
+            color: var(--ink-soft);
+            margin: 0;
+        }
+
+        /* ===== LANGUAGES ===== */
+        .lang-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .lang-box {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: var(--shadow-sm);
+        }
+        .lang-name {
+            font-weight: 600;
+            font-size: 14.5px;
+            color: var(--ink);
+        }
+        .lang-level {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            color: var(--accent-ink);
+            background: var(--accent-light);
+            border-radius: 999px;
+            padding: 2px 10px;
+        }
+
         /* ===== CONTACT ===== */
         .contact-row {
             display: flex;
@@ -816,18 +876,17 @@
                     <div>
                         <span class="status-badge">
                             <span class="dot"></span>
-                            Suche Ausbildung — 2027
+                            Verfügbar für eine Ausbildung ab 2027
                         </span>
                         <h1>
                             Leila El Tousy<span class="cursor" aria-hidden="true"></span>
                         </h1>
                         <p class="hero-role">
-                            Anwendungsentwicklerin aus Marokko, auf dem Weg zur
-                            <strong>Ausbildung als Fachinformatikerin für Anwendungsentwicklung</strong>
-                            in Deutschland.
+                            IT-Nachwuchskraft aus Marokko —
+                            <strong>praxisorientiert · technikbegeistert · lernbereit</strong>.
                         </p>
                         <p class="hero-desc">
-                            Ich lerne durch praktisches Tun — jedes Projekt auf dieser Seite löst ein echtes Problem oder bringt mir etwas Neues bei. Python, PHP, JavaScript und einige Praktika, bei denen ich Dinge gebaut habe, die tatsächlich genutzt wurden.
+                            Ich interessiere mich für Softwareentwicklung, IT-Systeme und technische Lösungen. Durch meine Ausbildung, Praktika und eigenen Projekte konnte ich bereits praktische Erfahrungen in verschiedenen Bereichen der IT sammeln. Mein Ziel ist es, meine bisherigen Kenntnisse in einem professionellen Umfeld weiterzuentwickeln und praktische Berufserfahrung in Deutschland zu sammeln.
                         </p>
                         <div class="hero-links">
                             <a class="btn btn-primary" href="https://github.com/El-Tousy" target="_blank" rel="noopener">GitHub ansehen</a>
@@ -854,16 +913,14 @@
                 <div class="about-grid">
                     <div class="about-text">
                         <p>
-                            Ich habe einen Abschluss in Informatik und bereite derzeit meine Bewerbungsunterlagen für eine <strong>Ausbildung in Deutschland</strong> vor. Mein DUT wird von der ANABIN als gleichwertig mit einem deutschen Berufsfachschulabschluss anerkannt — der praxisorientierte Weg ist genau das, was ich suche.
+                            Ich habe eine <strong>zweijährige praxisorientierte Ausbildung</strong> im Bereich Informatik in Marokko absolviert.
                         </p>
                         <p>
-                            Statt mich nur auf die Theorie zu beschränken, habe ich das letzte Jahr damit verbracht, in meinen Praktika konkrete Dinge zu bauen: Dashboards, WhatsApp-Bot, IT-Infrastruktur-Migration. Ich möchte das in einem deutschen Unternehmen fortsetzen und meinen Beruf vor Ort lernen.
+                            Während meiner Ausbildung, Praktika und eigenen Projekte habe ich Erfahrungen in der Software- und Webentwicklung, mit Datenbanken und APIs sowie im Umgang mit IT-Systemen und Docker gesammelt.
                         </p>
-                        <ul class="about-facts">
-                            <li>Basiert in Marokko — bereit, nach Deutschland zu ziehen</li>
-                            <li>Deutsch B1 </li>
-                            <li>Außerdem fließend in Arabisch, Französisch und Englisch</li>
-                        </ul>
+                        <p>
+                            Besonders interessiert mich, wie Anwendungen, Datenbanken und IT-Systeme miteinander funktionieren. Ich lerne gerne durch praktische Projekte, analysiere technische Probleme und suche selbstständig nach passenden Lösungen.
+                        </p>
                     </div>
                     <div>
                         <div class="stat-grid">
@@ -872,12 +929,12 @@
                                 <div class="stat-label">abgeschlossene Projekte</div>
                             </div>
                             <div class="stat-box">
-                                <div class="stat-number">3</div>
+                                <div class="stat-number">2</div>
                                 <div class="stat-label">absolvierte Praktika</div>
                             </div>
                             <div class="stat-box">
-                                <div class="stat-number">B1</div>
-                                <div class="stat-label">Deutsch (ÖSD)</div>
+                                <div class="stat-number">4</div>
+                                <div class="stat-label">gesprochene Sprachen</div>
                             </div>
                             <div class="stat-box">
                                 <div class="stat-number">2027</div>
@@ -897,12 +954,12 @@
                         <li>
                             <span class="timeline-date">2023 – 2024</span>
                             <p class="timeline-title">Marokkanisches Abitur</p>
-                            <p class="timeline-desc">Schwerpunkt Physik &amp; Chemie, Marokko. Mit der Note "Sehr Gut" abgeschlossen.</p>
+                            <p class="timeline-desc">Fachrichtung: Physikalische Wissenschaften, Marokko.</p>
                         </li>
                         <li>
                             <span class="timeline-date">2024 – 2026</span>
                             <p class="timeline-title">Diplôme Universitaire de Technologie (DUT) — Informatik</p>
-                            <p class="timeline-desc">École Supérieure de Technologie, Marokko. Zwei Praktika absolviert. Von der ANABIN als gleichwertig mit einem deutschen Berufsfachschulabschluss anerkannt.</p>
+                            <p class="timeline-desc">École Supérieure de Technologie, Beni Mellal, Marokko. Zweijährige praxisorientierte Ausbildung im Bereich Informatik — Grundlagen in Programmierung, Datenbanken, Netzwerken, Betriebssystemen, Webtechnologien und IT-Systemen.</p>
                         </li>
                     </ul>
                     <div class="education-photo">
@@ -914,7 +971,7 @@
             <!-- ===== PROJECTS ===== -->
             <section id="projects" class="reveal">
                 <p class="section-tag">Projekte</p>
-                <h2 class="section-title">Was ich gebaut habe</h2>
+                <h2 class="section-title">Praktische Erfahrungen &amp; Projekte</h2>
                 <div class="projects-grid">
 
                     <!-- PROJET 1 -->
@@ -927,9 +984,9 @@
                                 <h3 class="project-title"><a href="https://github.com/El-Tousy/Alexandra-AI-Voice-Assistante" target="_blank" rel="noopener">Alexandra — KI-Sprachassistent</a></h3>
                                 <span class="project-period">Abschlussprojekt · 2026</span>
                             </div>
-                            <p class="project-desc">Android-Sprachassistent, der Spracherkennung, einen OpenAI-gesteuerten Chat und intelligente Erinnerungen kombiniert — mit einem PHP/JS-Dashboard für die Verwaltung, alles basierend auf Firebase.</p>
+                            <p class="project-desc">Android-Sprachassistent mit Sprachsteuerung und KI-gestützter Kommunikation. Die Anwendung verarbeitet Sprachbefehle und kann verschiedene Aktionen auf dem Smartphone ausführen — für sensible Aktionen wurde ein Bestätigungssystem integriert. Zusätzlich entwickelte ich einen webbasierten Verwaltungsbereich und arbeitete mit verschiedenen APIs und Datenverwaltung.</p>
                             <div class="project-stack">
-                                <span class="chip">Kotlin</span><span class="chip">Java</span><span class="chip">OpenAI API</span><span class="chip">Firebase</span><span class="chip">HTML/CSS/JS</span>
+                                <span class="chip">Kotlin</span><span class="chip">Java</span><span class="chip">OpenAI API</span><span class="chip">Firebase</span><span class="chip">PHP</span><span class="chip">JavaScript</span>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/El-Tousy/Alexandra-AI-Voice-Assistante" target="_blank" rel="noopener" class="project-link">
@@ -950,9 +1007,9 @@
                                 <h3 class="project-title"><a href="https://github.com/El-Tousy/Weather-supervision-dashboard-showcase" target="_blank" rel="noopener">Wetter-Überwachungs-Dashboard</a></h3>
                                 <span class="project-period">Praktikum · 2026</span>
                             </div>
-                            <p class="project-desc">Echtzeit-Dashboard für ein IoT-Sensornetzwerk: interaktive Karte, Alarme, Schlüsselindikatoren und rollenbasierte Zugriffskontrolle, mit fünf separaten Datenbanken.</p>
+                            <p class="project-desc">Webbasiertes Dashboard zur Überwachung eines IoT-Sensornetzwerks. Das System verarbeitet Sensordaten, visualisiert Standorte auf einer interaktiven Karte und stellt wichtige Kennzahlen und Warnungen dar. Dabei arbeitete ich mit Datenbanken, APIs und rollenbasierten Zugriffsrechten.</p>
                             <div class="project-stack">
-                                <span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">jQuery</span><span class="chip">Leaflet.js</span>
+                                <span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">JavaScript</span><span class="chip">jQuery</span><span class="chip">Leaflet.js</span><span class="chip">REST APIs</span>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/El-Tousy/Weather-supervision-dashboard-showcase" target="_blank" rel="noopener" class="project-link">
@@ -973,9 +1030,9 @@
                                 <h3 class="project-title"><a href="https://github.com/El-Tousy/Admin-dashboard-project-internship-Giga-Manager-overview-screenshots-only" target="_blank" rel="noopener">Admin-Dashboard — Giga Manager</a></h3>
                                 <span class="project-period">Praktikum · 2026</span>
                             </div>
-                            <p class="project-desc">Admin-Dashboard für ein Hosting/Web-Unternehmen zur Verwaltung der Website, der Kundenanmeldungen und der Seiteninhalte. Außerdem Arbeit an der produktiven Website.</p>
+                            <p class="project-desc">Webbasiertes Admin-Dashboard zur Verwaltung von Website-Inhalten, Benutzern und Daten. Dabei arbeitete ich mit einem Backend und einer relationalen Datenbank und setzte verschiedene Verwaltungsfunktionen praktisch um.</p>
                             <div class="project-stack">
-                                <span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">HTML/CSS/JS</span>
+                                <span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/El-Tousy/Admin-dashboard-project-internship-Giga-Manager-overview-screenshots-only" target="_blank" rel="noopener" class="project-link">
@@ -996,7 +1053,7 @@
                                 <h3 class="project-title"><a href="https://github.com/El-Tousy/glpi-10-to-11-docker-migration" target="_blank" rel="noopener">GLPI 10 → 11 Migration mit Docker</a></h3>
                                 <span class="project-period">05/2026</span>
                             </div>
-                            <p class="project-desc">Containerisierte Migration einer GLPI-Instanz von Version 10 auf Version 11, mit Verwaltung der Datenkontinuität und der Konfiguration.</p>
+                            <p class="project-desc">Praktische Mitarbeit an der Migration einer GLPI-Instanz von Version 10 auf Version 11. Dabei beschäftigte ich mich mit Docker, Konfiguration, Datenbanken und der Sicherstellung der Datenkontinuität während der Migration — mit praktischen Einblicken in IT-Systeme, Containerisierung und den zuverlässigen Betrieb einer IT-Lösung.</p>
                             <div class="project-stack">
                                 <span class="chip">Docker</span><span class="chip">GLPI</span><span class="chip">MySQL</span>
                             </div>
@@ -1019,9 +1076,9 @@
                                 <h3 class="project-title"><a href="https://github.com/El-Tousy/Meta-API-python-whatsapp-bot" target="_blank" rel="noopener">WhatsApp-Bot — Meta API + OpenAI</a></h3>
                                 <span class="project-period">07/2025</span>
                             </div>
-                            <p class="project-desc">Interaktiver WhatsApp-Bot, der Nachrichten über die offizielle Meta-API empfängt und Antworten mit OpenAI generiert.</p>
+                            <p class="project-desc">WhatsApp-Bot zur Verarbeitung eingehender Nachrichten über die Meta API. Der Bot nutzt die OpenAI API zur Verarbeitung und Generierung von Antworten. Dabei arbeitete ich mit APIs, HTTP-Anfragen, Datenverarbeitung und automatisierten Abläufen.</p>
                             <div class="project-stack">
-                                <span class="chip">Python</span><span class="chip">Meta API</span><span class="chip">OpenAI API</span>
+                                <span class="chip">Python</span><span class="chip">Meta API</span><span class="chip">OpenAI API</span><span class="chip">REST APIs</span>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/El-Tousy/Meta-API-python-whatsapp-bot" target="_blank" rel="noopener" class="project-link">
@@ -1042,7 +1099,7 @@
                                 <h3 class="project-title"><a href="https://github.com/El-Tousy/VELO-STOR-Online-Store" target="_blank" rel="noopener">VELO STOR — Online-Shop</a></h3>
                                 <span class="project-period">07/2025</span>
                             </div>
-                            <p class="project-desc">Von Grund auf neu erstellter Online-Shop, um die Produktverwaltung und einen vollständigen Kaufprozess vom Katalog bis zum Warenkorb zu üben.</p>
+                            <p class="project-desc">Webbasierter Online-Shop mit Produktkatalog, Warenkorb und interaktiven Funktionen. Das Projekt diente dazu, moderne Webtechnologien praktisch anzuwenden und den Aufbau einer webbasierten Anwendung umzusetzen.</p>
                             <div class="project-stack">
                                 <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
                             </div>
@@ -1061,33 +1118,92 @@
             <!-- ===== SKILLS ===== -->
             <section id="skills" class="reveal">
                 <p class="section-tag">Fähigkeiten</p>
-                <h2 class="section-title">Werkzeuge &amp; Technologien</h2>
+                <h2 class="section-title">Technische Kenntnisse</h2>
                 <div class="skills-groups">
                     <div>
-                        <p class="skills-group-label">Sprachen</p>
+                        <p class="skills-group-label">Programmierung &amp; Entwicklung</p>
                         <div class="skills-chips">
                             <span class="skill-chip">Python</span>
                             <span class="skill-chip">PHP</span>
-                            <span class="skill-chip">HTML &amp; CSS</span>
+                            <span class="skill-chip">Kotlin</span>
+                            <span class="skill-chip">HTML</span>
+                            <span class="skill-chip">CSS</span>
                         </div>
                     </div>
                     <div>
-                        <p class="skills-group-label">Daten &amp; APIs</p>
+                        <p class="skills-group-label">Datenbanken &amp; APIs</p>
                         <div class="skills-chips">
+                            <span class="skill-chip">SQL</span>
                             <span class="skill-chip">MySQL</span>
-                            <span class="skill-chip">REST APIs</span>
                             <span class="skill-chip">Firebase</span>
                         </div>
                     </div>
                     <div>
-                        <p class="skills-group-label">Werkzeuge</p>
+                        <p class="skills-group-label">IT-Systeme &amp; Infrastruktur</p>
                         <div class="skills-chips">
-                            <span class="skill-chip">Git &amp; GitHub</span>
+                            <span class="skill-chip">Docker</span>
+                            <span class="skill-chip">GLPI</span>
                             <span class="skill-chip">XAMPP</span>
-                            <span class="skill-chip">FileZilla</span>
-                            <span class="skill-chip">VS Code</span>
-                            <span class="skill-chip">Android Studio</span>
                         </div>
+                    </div>
+                    <div>
+                        <p class="skills-group-label">Tools</p>
+                        <div class="skills-chips">
+                            <span class="skill-chip">Git</span>
+                            <span class="skill-chip">GitHub</span>
+                            <span class="skill-chip">Visual Studio Code</span>
+                            <span class="skill-chip">Android Studio</span>
+                            <span class="skill-chip">FileZilla</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ===== STRENGTHS ===== -->
+            <section id="strengths" class="reveal">
+                <p class="section-tag">Praktische Stärken</p>
+                <h2 class="section-title">Was mich auszeichnet</h2>
+                <div class="strength-grid">
+                    <div class="strength-box">
+                        <p class="strength-title">Praxisorientiertes Lernen</p>
+                        <p class="strength-desc">Ich entwickle gerne eigene Projekte, um neue Technologien praktisch anzuwenden und meine Kenntnisse zu vertiefen.</p>
+                    </div>
+                    <div class="strength-box">
+                        <p class="strength-title">Technisches Verständnis</p>
+                        <p class="strength-desc">Ich interessiere mich für die Verbindung von Anwendungen, Datenbanken, APIs und IT-Systemen.</p>
+                    </div>
+                    <div class="strength-box">
+                        <p class="strength-title">Problemlösung</p>
+                        <p class="strength-desc">Ich analysiere technische Probleme systematisch und versuche, selbstständig zuverlässige Lösungen zu entwickeln.</p>
+                    </div>
+                    <div class="strength-box">
+                        <p class="strength-title">Lernbereitschaft</p>
+                        <p class="strength-desc">Ich bin motiviert, neue Technologien kennenzulernen und meine technischen Fähigkeiten kontinuierlich weiterzuentwickeln.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== LANGUAGES ===== -->
+            <section id="languages" class="reveal">
+                <p class="section-tag">Sprachen</p>
+                <h2 class="section-title">Sprachkenntnisse</h2>
+                <div class="lang-grid">
+                    <div class="lang-box">
+                        <span class="lang-name">🇲🇦 Arabisch</span>
+                        <span class="lang-level">Muttersprache</span>
+                    </div>
+                    <div class="lang-box">
+                        <span class="lang-name">🇫🇷 Französisch</span>
+                        <span class="lang-level">B2</span>
+                    </div>
+                    <div class="lang-box">
+                        <span class="lang-name">🇩🇪 Deutsch</span>
+                        <span class="lang-level">B1</span>
+                    </div>
+                    <div class="lang-box">
+                        <span class="lang-name">🇬🇧 Englisch</span>
+                        <span class="lang-level">B2</span>
                     </div>
                 </div>
             </section>
@@ -1097,11 +1213,15 @@
                 <p class="section-tag">Kontakt</p>
                 <h2 class="section-title">Lass uns sprechen</h2>
                 <p class="contact-text">
-                    Ich stehe offenen Ausbildungsangeboten ab 2027 gegenüber. Zögern Sie nicht, mir zu schreiben oder ein Video-Gespräch zu vereinbaren.
+                    Ich suche einen Ausbildungsplatz im IT-Bereich ab 2027. Mein Ziel ist es, meine bisherigen Kenntnisse mit praktischer Berufserfahrung in einem deutschen Unternehmen zu verbinden, neue Technologien kennenzulernen und mich langfristig zu einer kompetenten IT-Fachkraft zu entwickeln.
+                </p>
+                <p class="contact-text">
+                    Sie interessieren sich für mein Profil oder möchten mehr über meine Projekte erfahren? Ich freue mich über die Möglichkeit, mich persönlich vorzustellen und mehr über Ihr Unternehmen und Ihre Ausbildungsangebote zu erfahren.
                 </p>
                 <div class="contact-row">
                     <a class="btn btn-secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=leilaeltousy@gmail.com&su=Kontaktaufnahme%20%C3%BCber%20Portfolio" target="_blank" rel="noopener">leilaeltousy@gmail.com</a>
                     <a class="btn btn-secondary" href="https://github.com/El-Tousy" target="_blank" rel="noopener">GitHub ↗</a>
+                    <a class="btn btn-secondary" href="https://el-tousy.github.io" target="_blank" rel="noopener">Portfolio ↗</a>
                 </div>
             </section>
 
@@ -1111,7 +1231,7 @@
     <!-- ===== FOOTER ===== -->
     <footer>
         <div class="wrap footer-inner">
-            <span>© 2026 Leila El Tousy</span>
+            <span>© 2026 Leila El Tousy — Vielen Dank für Ihren Besuch!</span>
             <a href="#top">↑ Nach oben</a>
         </div>
     </footer>
@@ -1123,11 +1243,11 @@
                 { ps: true, text: "whoami" },
                 { out: true, text: "Leila El Tousy" },
                 { ps: true, text: "cat about.txt" },
-                { out: true, text: "Abschluss in Informatik — Marokko 🇲🇦" },
-                { out: true, text: "Suche Ausbildung, Start 2027" },
+                { out: true, text: "IT-Nachwuchskraft — Marokko 🇲🇦" },
+                { out: true, text: "Praxisorientiert · technikbegeistert · lernbereit" },
                 { ps: true, text: "ls fähigkeiten/" },
-                { out: true, hi: true, text: "python  php  javascript" },
-                { out: true, hi: true, text: "kotlin  mysql  git" },
+                { out: true, hi: true, text: "python  php  html  kotlin" },
+                { out: true, hi: true, text: "mysql  docker  git  FileZilla" },
                 { ps: true, text: "cat status" },
                 { out: true, hi: true, text: "bereit, nach Deutschland zu ziehen" }
             ];
