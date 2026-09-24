@@ -8,7 +8,7 @@ Persönliches Portfolio von **mir**, IT-Nachwuchskraft aus Marokko — praxisori
 
 Diese Website stellt meinen Werdegang, meine abgeschlossenen Projekte und meine technischen Fähigkeiten vor. Sie dient als digitale Bewerbungsunterlage für deutsche Unternehmen, die Auszubildende im IT-Bereich suchen.
 
-## Inhalt der Seite
+## Inhalt der Seite 
 
 - **Über mich** — Kurzvorstellung und aktueller Status der Bewerbung
 - **Ausbildung** —
