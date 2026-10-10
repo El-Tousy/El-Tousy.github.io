@@ -34,7 +34,7 @@ Diese Website stellt meinen Werdegang, meine abgeschlossenen Projekte und meine 
 
 - Arabisch: **Muttersprache**
 - Französisch: **B2**
-- Deutsch: **B1**
+- Deutsch: **B2**
 - Englisch: **B2**
 
 ## Technischer Aufbau
