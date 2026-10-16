@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexandra — KI-Sprachassistent — Leila El Tousy</title>
+    <meta name="description" content="Alexandra — KI-Sprachassistent — Projektdetails von Leila El Tousy." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+
+    <nav class="topnav">
+        <div class="topnav-inner">
+            <a class="brand" href="../index.html">leila<span class="dot">.</span>dev</a>
+            <a class="nav-back" href="../index.html#projects">← Zurück zu den Projekten</a>
+        </div>
+    </nav>
+
+    <main class="detail">
+        <a class="back" href="../index.html#projects"><span>←</span>Zurück zu den Projekten</a>
+
+        <!-- ===== GALERIE =====
+             Eigene Fotos hinzufügen: Datei in images/projects/alexandra/ legen (2.png, 3.png, 4.png, 5.png).
+             Für mehr als 5 Bilder: eine <figure>-Zeile kopieren und die Nummer ändern.
+             Fehlende Bilder werden automatisch ausgeblendet. -->
+        <section class="gallery" aria-label="Projektbilder">
+            <div class="gallery-viewport">
+                <div class="gallery-track">
+                    <figure class="slide"><img src="../images/alexandra.png" alt="Alexandra — KI-Sprachassistent – Bild 1"></figure>
+                    <figure class="slide"><img src="../images/projects/alexandra/2.png" alt="Alexandra — KI-Sprachassistent – Bild 2"></figure>
+                    <figure class="slide"><img src="../images/projects/alexandra/3.png" alt="Alexandra — KI-Sprachassistent – Bild 3"></figure>
+                    <figure class="slide"><img src="../images/projects/alexandra/4.png" alt="Alexandra — KI-Sprachassistent – Bild 4"></figure>
+                    <figure class="slide"><img src="../images/projects/alexandra/5.png" alt="Alexandra — KI-Sprachassistent – Bild 5"></figure>
+                </div>
+                <button class="gallery-btn prev" aria-label="Vorheriges Bild">‹</button>
+                <button class="gallery-btn next" aria-label="Nächstes Bild">›</button>
+            </div>
+            <div class="gallery-dots"></div>
+        </section>
+
+        <!-- ===== KOPF ===== -->
+        <div class="head">
+            <p class="type">Abschlussprojekt</p>
+            <h1>Alexandra — KI-Sprachassistent</h1>
+            <div class="facts">
+                <div class="fact"><span class="fact-label">Zeitraum</span><span class="fact-value">2026</span></div>
+                <div class="fact"><span class="fact-label">Art</span><span class="fact-value">Abschlussprojekt</span></div>
+            </div>
+            <p class="lead">Android-Sprachassistent mit Sprachsteuerung und KI-gestützter Kommunikation. Die Anwendung verarbeitet Sprachbefehle und kann verschiedene Aktionen auf dem Smartphone ausführen — für sensible Aktionen wurde ein Bestätigungssystem integriert. Zusätzlich entwickelte ich einen webbasierten Verwaltungsbereich und arbeitete mit verschiedenen APIs und Datenverwaltung.</p>
+            <div class="chips"><span class="chip">Kotlin</span><span class="chip">Java</span><span class="chip">OpenAI API</span><span class="chip">Firebase</span><span class="chip">PHP</span><span class="chip">JavaScript</span></div>
+            <div class="actions">
+                <a class="project-btn" href="https://github.com/El-Tousy/alexandra-voice-assistant/tree/main/Video%20Demo" target="_blank" rel="noopener">Live ↗</a>
+                <a class="project-btn" href="https://github.com/El-Tousy/Alexandra-AI-Voice-Assistante" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+            </div>
+        </div>
+
+        <!-- ===== HIGHLIGHTS ===== -->
+        <section class="card">
+            <h2>Highlights</h2>
+            <ul><li>Sprachsteuerung und Verarbeitung von Sprachbefehlen.</li><li>KI-gestützte Kommunikation über die OpenAI API.</li><li>Ausführung verschiedener Aktionen auf dem Smartphone.</li><li>Bestätigungssystem für sensible Aktionen.</li><li>Webbasierter Verwaltungsbereich mit PHP und JavaScript.</li></ul>
+        </section>
+
+        <!-- ===== GELERNT ===== -->
+        <section class="card">
+            <h2>Was ich dabei gelernt habe</h2>
+            <ul><li>Entwicklung einer Android-Anwendung.</li><li>Einbindung externer APIs und Datenverwaltung.</li><li>Absicherung sensibler Aktionen durch Bestätigung.</li><li>Zusammenspiel von App, Backend und Web-Oberfläche.</li></ul>
+        </section>
+
+        <div class="bottom">
+            <a class="project-btn detail" href="../index.html#projects">← Zurück zu den Projekten</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-card">
+            <div class="footer-brand">
+                <a class="brand" href="../index.html">leila<span class="dot">.</span>dev</a>
+                <span class="footer-copy">© 2026 Leila El Tousy. IT-Nachwuchskraft.</span>
+            </div>
+            <div class="footer-actions">
+                <a class="footer-github" href="https://github.com/El-Tousy/alexandra-voice-assistant" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+                <div class="footer-divider"></div>
+                <!-- Lebenslauf-PDF in den Ordner assets/ legen (Dateiname hier anpassen) -->
+                <a class="footer-cv" href="../assets/Lebenslauf_Leila_El_Tousy.pdf" download><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24z"/></svg>Lebenslauf herunterladen</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="detail.js"></script>
+</body>
+</html>
